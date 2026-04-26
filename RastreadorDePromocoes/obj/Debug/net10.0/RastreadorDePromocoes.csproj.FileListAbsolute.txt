@@ -19,3 +19,4 @@ C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\obj\Debu
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\obj\Debug\net10.0\RastreadorDePromocoes.genruntimeconfig.cache
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\obj\Debug\net10.0\ref\RastreadorDePromocoes.dll
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\CsvHelper.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\obj\Debug\net10.0\RastreadorDePromocoes.sourcelink.json

@@ -1,5 +1,4 @@
-﻿
-
+﻿using MercadoLivre.Bot;
 
 namespace MercadoLivre.Bot
 {
