@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
+using System.IO;
 
 namespace MercadoLivre.Bot
 {
     public class ReportService
     {
-        public void SaveBatchToCsv(List<Product> batch, int batchNumber, string outputDir = "ouput")
+        public void SaveBatchToCsv(List<Product> batch, int batchNumber, string outputDir = "output")
         {
             Directory.CreateDirectory(outputDir);
             var path = Path.Combine(outputDir, $"lote_{batchNumber:D2}.csv");

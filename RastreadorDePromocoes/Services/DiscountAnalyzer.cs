@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace MercadoLivre.Bot
 {
@@ -9,7 +10,10 @@ namespace MercadoLivre.Bot
        private decimal Parseprice(string? raw)
         {
             if (string.IsNullOrWhiteSpace(raw)) return 0;
-            var cleaned = raw.Replace(".", "").Replace(",", ".").Trim();
+            var cleaned = raw.Replace("R$", "")
+                             .Replace(".", "")
+                             .Replace(",", ".")
+                             .Trim(); 
             return decimal.TryParse(cleaned, out var val) ? val : 0;
         }
 
@@ -19,8 +23,11 @@ namespace MercadoLivre.Bot
             {
                 p.PriceDecimal = Parseprice(p.Price);
                 p.OriginalPriceDecimal = Parseprice(p.OriginalPrice);
-                
-                if(p.OriginalPriceDecimal > 0 && p.PriceDecimal > 0 
+
+                Console.WriteLine($"Atual: {p.Price}");
+                Console.WriteLine($"Original: {p.OriginalPrice}");
+
+                if (p.OriginalPriceDecimal > 0 && p.PriceDecimal > 0 
                     && p.OriginalPriceDecimal > p.PriceDecimal)
                 {
                     p.DiscountPercent = Math.Round(
