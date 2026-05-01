@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RastreadorDePromocoes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+945fcdca7e38ed388708a3c7b29b27db7e697961")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f48a81af2e774bbdac3d6185e74804611dbae2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RastreadorDePromocoes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RastreadorDePromocoes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
