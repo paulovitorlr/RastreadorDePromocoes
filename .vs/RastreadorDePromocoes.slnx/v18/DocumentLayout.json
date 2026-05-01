@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\scraping\\rastreador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\scraping\\rastreador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\db\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\db\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\services\\discountanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\services\\discountanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\db\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\db\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Rastreador.cs",
-              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Scraping\\Rastreador.cs",
-              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Scraping\\Rastreador.cs",
-              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Scraping\\Rastreador.cs",
-              "RelativeToolTip": "RastreadorDePromocoes\\Scraping\\Rastreador.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowFkAAAAcAAAAAAAAAA==",
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "RelativeToolTip": "RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T17:05:35.418Z",
+              "WhenOpened": "2026-05-01T19:32:11.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DiscountAnalyzer.cs",
-              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Services\\DiscountAnalyzer.cs",
-              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Services\\DiscountAnalyzer.cs",
-              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Services\\DiscountAnalyzer.cs",
-              "RelativeToolTip": "RastreadorDePromocoes\\Services\\DiscountAnalyzer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBgAAABFAAAAAAAAAA==",
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\DbContext.cs",
+              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Db\\DbContext.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\DbContext.cs",
+              "RelativeToolTip": "RastreadorDePromocoes\\Db\\DbContext.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwDsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T16:51:11.671Z"
+              "WhenOpened": "2026-05-01T13:28:10.709Z",
+              "EditorCaption": ""
             }
           ]
         }

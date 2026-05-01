@@ -1,4 +1,5 @@
 ﻿using MercadoLivre.Bot;
+using MercadoLivre.Bot.Database;
 
 namespace MercadoLivre.Bot
 {
@@ -10,20 +11,25 @@ namespace MercadoLivre.Bot
             var raw = rastreador.TestWeb();
             Console.WriteLine($"{raw.Count} produtos coletados.");
 
-            var analyzer = new DiscountAnalyzer();
-            var ranked = analyzer.EnrichWithDiscount( raw );
+            // ✅ SALVA NO BANCO
+            var dbContext = new DbContext();
+            dbContext.EnsureCreated();
+            var repository = new ProductRepository(dbContext);
+            repository.InsertMany(raw);
 
+            var analyzer = new DiscountAnalyzer();
+            var ranked = analyzer.EnrichWithDiscount(raw);
 
             var scheduler = new BatchScheduler(batchSize: 3, intervalSeconds: 30);
-            var batches = scheduler.CreateBatches( ranked );
+            var batches = scheduler.CreateBatches(ranked);
 
             var report = new ReportService();
-            report.SaveFullRankingToCsv( raw );
+            report.SaveFullRankingToCsv(raw);
 
             await scheduler.ProcessBatchesAsync(batches, async (batch, number) =>
             {
                 foreach (var p in batch)
-                    Console.WriteLine($"[{p.DiscountPercent}% off] {p.Title} - R$ {p.PriceDecimal}");
+                    Console.WriteLine($"[{p.DiscountPercent}% off] {p.Title} - R$ {p.Price}");
                 report.SaveBatchToCsv(batch, number);
                 await Task.CompletedTask;
             });
@@ -32,8 +38,3 @@ namespace MercadoLivre.Bot
         }
     }
 }
-
-
-
-
-

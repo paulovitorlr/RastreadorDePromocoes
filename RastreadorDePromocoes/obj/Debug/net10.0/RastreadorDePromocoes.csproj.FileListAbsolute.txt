@@ -20,3 +20,11 @@ C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\obj\Debu
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\obj\Debug\net10.0\ref\RastreadorDePromocoes.dll
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\CsvHelper.dll
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\obj\Debug\net10.0\RastreadorDePromocoes.sourcelink.json
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\DotNetEnv.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Npgsql.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Superpower.dll
