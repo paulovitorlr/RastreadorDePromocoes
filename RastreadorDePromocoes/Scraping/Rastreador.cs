@@ -36,54 +36,36 @@ namespace MercadoLivre.Bot
             {
                 try
                 {
-                    var title = card.FindElement(By.XPath(".//h3")).Text;
+                    // TÍTULO — tag é h3 > a com classe poly-component__title
+                    var titleElement = card.FindElements(
+                        By.XPath(".//a[contains(@class,'poly-component__title')]")
+                    ).FirstOrDefault();
 
-                    string url = "";
-                    var linkElement = card.FindElements(By.XPath(".//a")).FirstOrDefault();
-                    if (linkElement != null)
-                        url = linkElement.GetAttribute("href");
+                    if (titleElement == null) continue;
+                    var title = titleElement.Text;
 
-                    // PEGA TODOS OS PREÇOS DO CARD
-                    var priceElements = card.FindElements(By.XPath(
-                        ".//span[contains(@class,'andes-money-amount__fraction')]"
-                    ));
+                    // URL — mesmo elemento do título já tem o href
+                    string url = titleElement.GetAttribute("href");
 
-                    var values = priceElements
-                        .Select(e => e.Text)
-                        .Where(v => !string.IsNullOrWhiteSpace(v))
-                        .ToList();
+                    // PREÇO ATUAL — dentro de div.poly-price__current
+                    var currentPriceElement = card.FindElements(
+                        By.XPath(".//div[contains(@class,'poly-price__current')]" +
+                                 "//span[contains(@class,'andes-money-amount__fraction')]")
+                    ).FirstOrDefault();
 
-                    string price = "";
+                    if (currentPriceElement == null) continue; // sem preço → ignora
+
+                    string price = currentPriceElement.Text;
+
+                    // PREÇO ORIGINAL (riscado) — span com classe andes-money-amount--previous
                     string? originalPrice = null;
+                    var oldPriceElement = card.FindElements(
+                        By.XPath(".//s[contains(@class,'andes-money-amount--previous')]" +
+                                 "//span[contains(@class,'andes-money-amount__fraction')]")
+                    ).FirstOrDefault();
 
-                    if (values.Count == 1)
-                    {
-                        // sem desconto
-                        price = values[0];
-                    }
-                    else if (values.Count >= 2)
-                    {
-                        // converte para decimal
-                        var parsed = values
-                        .Select(v => decimal.Parse(v.Replace(".", "").Replace(",", ".")))
-                        .Where(v => v > 800) // ignora parcelas pequenas
-                        .OrderBy(v => v)
-                        .ToList();
-
-                        if (parsed.Count == 1)
-                        {
-                            price = parsed[0].ToString();
-                        }
-                        else if (parsed.Count >= 2)
-                        {
-                            price = parsed[0].ToString();
-                            originalPrice = parsed.Last().ToString();
-                        } // maior = preço original
-                    }
-                    else
-                    {
-                        continue; // sem preço → ignora
-                    }
+                    if (oldPriceElement != null)
+                        originalPrice = oldPriceElement.Text;
 
                     produtos.Add(new Product()
                     {
@@ -93,11 +75,10 @@ namespace MercadoLivre.Bot
                         Url = url
                     });
 
-                    // DEBUG
                     Console.WriteLine("-----");
                     Console.WriteLine($"Produto: {title}");
                     Console.WriteLine($"Preço atual: {price}");
-                    Console.WriteLine($"Preço original: {originalPrice}");
+                    Console.WriteLine($"Preço original: {originalPrice ?? "sem desconto"}");
                 }
                 catch (Exception ex)
                 {

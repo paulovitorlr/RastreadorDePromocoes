@@ -24,9 +24,6 @@ namespace MercadoLivre.Bot
                 p.PriceDecimal = Parseprice(p.Price);
                 p.OriginalPriceDecimal = Parseprice(p.OriginalPrice);
 
-                Console.WriteLine($"Atual: {p.Price}");
-                Console.WriteLine($"Original: {p.OriginalPrice}");
-
                 if (p.OriginalPriceDecimal > 0 && p.PriceDecimal > 0 
                     && p.OriginalPriceDecimal > p.PriceDecimal)
                 {
