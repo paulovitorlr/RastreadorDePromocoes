@@ -67,6 +67,10 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.43.0, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[22.9.6.2, )"
             }
           },
           "imports": [

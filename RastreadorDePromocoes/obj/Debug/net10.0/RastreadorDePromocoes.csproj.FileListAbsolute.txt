@@ -28,3 +28,7 @@ C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debu
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Npgsql.dll
 C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Superpower.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\paulo\source\repos\RastreadorDePromocoes\RastreadorDePromocoes\bin\Debug\net10.0\Telegram.Bot.dll
