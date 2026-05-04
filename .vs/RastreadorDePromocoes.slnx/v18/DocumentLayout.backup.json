@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\db\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\db\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\export\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\export\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\scraping\\rastreador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\scraping\\rastreador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|c:\\users\\paulo\\source\\repos\\rastreadordepromocoes\\rastreadordepromocoes\\services\\batchscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D990A1DF-4B58-3CB2-2284-9716B6310A49}|RastreadorDePromocoes\\RastreadorDePromocoes.csproj|solutionrelative:rastreadordepromocoes\\services\\batchscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Db\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\ProductRepository.cs",
-              "RelativeToolTip": "RastreadorDePromocoes\\Db\\ProductRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowEMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T17:24:12.656Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -49,35 +40,61 @@
               "RelativeDocumentMoniker": "RastreadorDePromocoes\\Export\\Program.cs",
               "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Export\\Program.cs",
               "RelativeToolTip": "RastreadorDePromocoes\\Export\\Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAIwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T16:38:52.163Z",
+              "WhenOpened": "2026-05-04T21:03:10.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\.env",
-              "RelativeDocumentMoniker": "RastreadorDePromocoes\\.env",
-              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\.env",
-              "RelativeToolTip": "RastreadorDePromocoes\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-02T16:23:35.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TelegramService.cs",
               "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Services\\TelegramService.cs",
               "RelativeDocumentMoniker": "RastreadorDePromocoes\\Services\\TelegramService.cs",
               "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Services\\TelegramService.cs",
               "RelativeToolTip": "RastreadorDePromocoes\\Services\\TelegramService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T13:46:33.483Z",
+              "WhenOpened": "2026-05-04T21:02:44.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "RelativeToolTip": "RastreadorDePromocoes\\Db\\ProductRepository.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwF4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T21:02:05.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BatchScheduler.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Services\\BatchScheduler.cs",
+              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Services\\BatchScheduler.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Services\\BatchScheduler.cs",
+              "RelativeToolTip": "RastreadorDePromocoes\\Services\\BatchScheduler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T20:55:53.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rastreador.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Scraping\\Rastreador.cs",
+              "RelativeDocumentMoniker": "RastreadorDePromocoes\\Scraping\\Rastreador.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\repos\\RastreadorDePromocoes\\RastreadorDePromocoes\\Scraping\\Rastreador.cs",
+              "RelativeToolTip": "RastreadorDePromocoes\\Scraping\\Rastreador.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIA8wCcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T20:55:34.311Z",
               "EditorCaption": ""
             }
           ]

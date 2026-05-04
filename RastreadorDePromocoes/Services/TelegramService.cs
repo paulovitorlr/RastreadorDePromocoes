@@ -51,14 +51,15 @@ namespace MercadoLivre.Bot
             Console.WriteLine($"[TELEGRAM] ✅ Enviado: {p.Title}");
         }
 
-        public async Task EnviarLote(List<Product> batch, int numero)
+        public async Task EnviarLote(List<Product> batch, int numero, Action<Product>? onEnviado = null)
         {
             Console.WriteLine($"\n[TELEGRAM] Enviando lote {numero} ({batch.Count} produtos)...");
 
             foreach (var p in batch)
             {
                 await EnviarPromocao(p);
-                await Task.Delay(1500); // Evita flood limit do Telegram
+                onEnviado?.Invoke(p);           // ← marca como enviado só após sucesso
+                await Task.Delay(1500);
             }
         }
 

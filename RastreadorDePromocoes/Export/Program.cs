@@ -35,15 +35,15 @@ namespace MercadoLivre.Bot
 
             var db = new DbContext();
             var repo = new ProductRepository(db);
-            var produtos = repo.GetAll();
+            var produtos = repo.GetUnsent();          // ← só os não enviados
 
             if (produtos.Count == 0)
             {
-                Console.WriteLine("[BOT] Nenhum produto no banco. Rode sem --enviar primeiro.");
+                Console.WriteLine("[BOT] Nenhum produto novo para enviar.");
                 return;
             }
 
-            Console.WriteLine($"[BOT] {produtos.Count} produtos carregados do banco.");
+            Console.WriteLine($"[BOT] {produtos.Count} produtos novos para enviar.");
 
             var analyzer = new DiscountAnalyzer();
             var ranked = analyzer.EnrichWithDiscount(produtos);
@@ -58,7 +58,11 @@ namespace MercadoLivre.Bot
                 foreach (var p in batch)
                     Console.WriteLine($"[{p.DiscountPercent}% off] {p.Title} - R$ {p.Price}");
 
-                await telegram.EnviarLote(batch, number);
+                await telegram.EnviarLote(batch, number, onEnviado: p =>
+                {
+                    repo.MarkAsSent(p.Title!);        // ← marca no banco após enviar
+                    Console.WriteLine($"[DB] Marcado como enviado: {p.Title}");
+                });
             });
 
             Console.WriteLine("\n[BOT] Envio finalizado!");

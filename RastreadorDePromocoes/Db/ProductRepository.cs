@@ -65,10 +65,10 @@ namespace MercadoLivre.Bot.Database
 
             Console.WriteLine($"\n[DB] Resultado: {inseridos} inseridos, {duplicatas} duplicatas ignoradas.");
         }
-    
 
 
-    public List<Product> GetAll()
+
+        public List<Product> GetAll()
         {
             var products = new List<Product>();
 
@@ -91,6 +91,51 @@ namespace MercadoLivre.Bot.Database
             }
 
             return products;
+        }
+    
+
+    /// <summary>
+/// Retorna apenas os produtos que ainda não foram enviados ao Telegram.
+/// </summary>
+public List<Product> GetUnsent()
+        {
+            var products = new List<Product>();
+
+            using var conn = _context.GetConnection();
+            conn.Open();
+
+            using var cmd = new NpgsqlCommand(
+                "SELECT title, price, original_price, url FROM products WHERE sent_at IS NULL ORDER BY scraped_at DESC;",
+                conn);
+
+            using var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                products.Add(new Product
+                {
+                    Title = reader.GetString(0),
+                    Price = reader.GetString(1),
+                    OriginalPrice = reader.IsDBNull(2) ? null : reader.GetString(2),
+                    Url = reader.IsDBNull(3) ? null : reader.GetString(3)
+                });
+            }
+
+            return products;
+        }
+
+        /// <summary>
+        /// Marca um produto como enviado, salvando o timestamp atual.
+        /// </summary>
+        public void MarkAsSent(string title)
+        {
+            using var conn = _context.GetConnection();
+            conn.Open();
+
+            using var cmd = new NpgsqlCommand(
+                "UPDATE products SET sent_at = NOW() WHERE title = @title;", conn);
+
+            cmd.Parameters.AddWithValue("title", title);
+            cmd.ExecuteNonQuery();
         }
     }
 }

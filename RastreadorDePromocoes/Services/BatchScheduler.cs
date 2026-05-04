@@ -18,19 +18,21 @@ namespace MercadoLivre.Bot
         public List<List<Product>> CreateBatches(List<Product> ranked)
         {
             var batches = new List<List<Product>>();
-            for (int i = 0; i < ranked.Count; i += _batchSize) ;
+
+            for (int i = 0; i < ranked.Count; i += _batchSize)
             {
-                var batch = ranked.Skip(1).Take(_batchSize).ToList();
-                int groupNumber = (1 / _batchSize) + 1;
+                var batch = ranked.Skip(i).Take(_batchSize).ToList();
+                int groupNumber = (i / _batchSize) + 1;
                 batch.ForEach(p => p.BatchGroup = groupNumber);
                 batches.Add(batch);
             }
+
             return batches;
         }
-    
 
 
-    public async Task ProcessBatchesAsync(
+
+        public async Task ProcessBatchesAsync(
         List<List<Product>> batches,
         Func<List<Product>, int, Task> onBatch)
         {
